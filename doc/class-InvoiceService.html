@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class InvoiceService | InvoiceService Doc</title>
+
+	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
+	<script type="text/javascript" src="elementlist.js?2537475228"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-InvoiceService.html">InvoiceService</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class InvoiceService</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-InvoiceService.html#3-184" title="Go to source code">InvoiceService.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-InvoiceService.html#17-25" title="Go to source code">__construct</a>( <span>string <var>$user</var></span>, <span>string <var>$apiKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Konstruktor InvoiceService</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Konstruktor InvoiceService</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user</var></dt>
+					<dd><code>string</code><br>$user Nazwa użytkownika serwisu</dd>
+					<dt><var>$apiKey</var></dt>
+					<dd><code>string</code><br>$apiKey Klucz api uzytkownika</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getJson" id="_getJson">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getJson">#</a>
+		<code><a href="source-class-InvoiceService.html#77-84" title="Go to source code">getJson</a>( <span>string <var>$invoiceId</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/get/_invoiceId_/json</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/get/_invoiceId_/json</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$invoiceId</var></dt>
+					<dd><code>string</code><br>$invoiceId Identyfikator faktury</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Zwraca odpowiedź wygenerowaną przez API array(dane, kod http)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMail" id="_getMail">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMail">#</a>
+		<code><a href="source-class-InvoiceService.html#86-94" title="Go to source code">getMail</a>( <span>string <var>$invoiceId</var></span>, <span>string <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/get/_invoiceId_/mail</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/get/_invoiceId_/mail</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$invoiceId</var></dt>
+					<dd><code>string</code><br>$invoiceId Identyfikator faktury</dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>string</code><br>$parameters Parametry zapytania w formacie json - dane do wysłania e-mail</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>zwraca odpowiedź wygenerowaną przez API array(dane, kod http)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPdf" id="_getPdf">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPdf">#</a>
+		<code><a href="source-class-InvoiceService.html#96-116" title="Go to source code">getPdf</a>( <span>string <var>$invoiceId</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/get/_invoiceId_/pdfplain i zwraca wynik jako plik
+pdf</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/get/_invoiceId_/pdfplain i zwraca wynik jako plik
+pdf</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$invoiceId</var></dt>
+					<dd><code>string</code><br>$invoiceId Identyfikator faktury</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Odpowiedź API jako plik do pobrania<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPdfPlain" id="_getPdfPlain">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPdfPlain">#</a>
+		<code><a href="source-class-InvoiceService.html#118-126" title="Go to source code">getPdfPlain</a>( <span>string <var>$invoiceId</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/get/_invoiceId_/pdfplain i zwraca wynik jako array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/get/_invoiceId_/pdfplain i zwraca wynik jako array</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$invoiceId</var></dt>
+					<dd><code>string</code><br>$invoiceId Parametry zapytania w formacie json - dane do faktury</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Odpowiedź array(dane,kod http) - dane to kod pliku pdf<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateJson" id="_generateJson">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateJson">#</a>
+		<code><a href="source-class-InvoiceService.html#129-136" title="Go to source code">generateJson</a>( <span>string <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/generate/json</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/generate/json</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd><code>string</code><br>$parameters Parametry zapytania w formacie json - dane do faktury</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Zwraca odpowiedź wygenerowaną przez API array(dane, kod http)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateMail" id="_generateMail">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateMail">#</a>
+		<code><a href="source-class-InvoiceService.html#138-145" title="Go to source code">generateMail</a>( <span>string <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/generate/mail</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/generate/mail</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd><code>string</code><br>$parameters Parametry zapytania w formacie json - dane do faktury i wysłania
+e-mail</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Zwraca odpowiedź wygenerowaną przez API array(dane, kod http)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="listAll" id="_listAll">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_listAll">#</a>
+		<code><a href="source-class-InvoiceService.html#147-153" title="Go to source code">listAll</a>( )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/list</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/list</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Zwraca odpowiedź wygenerowaną przez API array(dane, kod http)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="stats" id="_stats">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_stats">#</a>
+		<code><a href="source-class-InvoiceService.html#155-161" title="Go to source code">stats</a>( )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/stats</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/stats</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Zwraca odpowiedź wygenerowaną przez API array(dane, kod http)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-InvoiceService.html#163-171" title="Go to source code">delete</a>( <span>string <var>$invoiceId</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/delete</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/delete</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$invoiceId</var></dt>
+					<dd><code>string</code><br>$invoiceId Identyfikator faktury</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Odpowiedź array(dane,kod http) - dane to kod pliku pdf<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="test" id="_test">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_test">#</a>
+		<code><a href="source-class-InvoiceService.html#173-180" title="Go to source code">test</a>( )</code>
+
+		<div class="description short">
+			
+<p>Wywołuje metodę api/test</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wywołuje metodę api/test</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Odpowiedź array(dane,kod http)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="user" id="$user">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-InvoiceService.html#5-9" title="Go to source code"><var>$user</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$user" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Nazwa użytkownika serwisu</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Nazwa użytkownika serwisu</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="apiKey" id="$apiKey">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-InvoiceService.html#11-15" title="Go to source code"><var>$apiKey</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$apiKey" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Klucz api uzytkownika</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Klucz api uzytkownika</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		InvoiceService Doc API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
